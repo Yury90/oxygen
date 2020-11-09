@@ -279,15 +279,61 @@ p {
 .expertise__content-item:nth-child(2)::before {
     content: '80%';
     position: absolute;
-    right: 5em;
+    right: 3.5rem;
 }
 
 .expertise__content-item:nth-child(3)::before {
     content: '85%';
     position: absolute;
-    right: 2.5em;
+    right: 2.5rem;
 }
 
 .expertise__content-text {
     width: 770px;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+}
+
+.expertise__items {
+    margin-top: 107px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 135px;
+}
+
+.expertise__item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 27px;
+}
+
+.expertise__item:nth-child(3) {
+    margin-right: 0;
+}
+
+.expertise__item-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
+}
+
+.expertise__item-title {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 4.29px;
+    color: #333333;
+}
+
+.expertise__item-text {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-top: 15px;
 }
