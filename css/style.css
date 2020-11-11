@@ -366,7 +366,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 140px 135px 121px;
+    padding: 140px 135px 0px;
 }
 .portfolio__title {
     font-family: Montserrat;
@@ -377,6 +377,7 @@ p {
     letter-spacing: -1.65px;
     color: #242121;
     position: relative;
+    margin-bottom: 9px;
 }
 .portfolio__title::after {
     content: "";
@@ -422,7 +423,7 @@ p {
     border-bottom: 1px solid #FCBB08;
 }
 .portfolio__items {
-    margin-top: 142px;
+    margin-top: 103px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -435,17 +436,18 @@ p {
 .portfolio__item-img {
     background: #EDEDED;
     width: 343px;
-    transition: all .3s;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all .3s;
 }
 .portfolio__item-img:nth-child(1) {
     height: 494px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 .portfolio__item-img:nth-child(2) {
     height: 395px;
@@ -482,12 +484,9 @@ p {
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
-    /* text-align: center; */
-    
     letter-spacing: 1.4px;
     color: #FFFFFF;
     display: none;
-    margin: auto;
 }
 .portfolio__item-descr {
     font-family: Open Sans;
@@ -505,8 +504,79 @@ p {
     border: 12px solid rgba(255, 255, 255, 0.147164);
 }
 .portfolio__item-img:hover .portfolio__item-descr {
-    display: flex;
+    display: block;
 }
 .portfolio__item-img:hover .portfoliio__item-title {
+    display: block;
+}
+.portfolio__btn-all {
     display: flex;
+    margin-top: 72px;
+    width: 1440px;
+    height: 100px;
+    background-color: #F6F8FA;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+    color: #242121;
+}
+.video__content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 130px;
+}
+.video__quotes {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: #242121;
+    width: 650px;
+    height: 72px;
+    text-align: center;
+}
+.video__quotes-author {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 32px;
+    color: #9E9E9E;
+    width: 116px;
+    height: 32px;
+    margin-top: 50px;
+}
+.video__content {
+    width: 1440px;
+    height: 324px;
+    background-color: #9E9E9E;
+    margin: 0 auto;
+    margin-top: 148px;
+    display: flex;
+    background-image: url('../images/video-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.video__content::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 65px;
+    background-image: url('../images/video-play.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
